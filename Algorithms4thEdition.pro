@@ -1,23 +1,8 @@
-QT += qml quick
+TEMPLATE = subdirs
 
-CONFIG += c++11
-
-SOURCES += main.cpp \
-    testpaint.cpp \
-    plottest.cpp \
-    randomdata.cpp
-
-RESOURCES += qml.qrc
-
-# Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
-HEADERS += \
-    testpaint.h \
-    plottest.h \
-    randomdata.h
+SUBDIRS += \
+    Exercises \
+    Draw \
+    ADT \
+    Sort \
+    Search
